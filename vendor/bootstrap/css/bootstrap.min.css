@@ -304,7 +304,7 @@ template{display:none}[hidden]{display:none!important}
 .h4,h4{font-size:1.5rem}
 .h5,h5{font-size:1.25rem}
 .h6,h6{font-size:1rem}
-.lead{font-size:1.25rem;font-weight:300}
+.lead{font-size:1.25rem;font-weight:300;white-space: pre-line;}
 .display-1{font-size:6rem;font-weight:300;line-height:1.2}
 .display-2{font-size:5.5rem;font-weight:300;line-height:1.2}
 .display-3{font-size:4.5rem;font-weight:300;line-height:1.2}
