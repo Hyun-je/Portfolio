@@ -80,11 +80,10 @@ h1 {
 }
 
 h3,h4 {
-    margin-top:20;
+    margin-top:30;
     margin-bottom: 20;
     display: inline-block;
-    background-color:#111122;
-    color:#f7e8c1;
+    color:#111122;
 }
 
 .tag {
@@ -353,7 +352,7 @@ hr{margin-top:1rem;margin-bottom:1rem;border:0;border-top:1px solid rgba(0,0,0,.
 .blockquote{margin-bottom:1rem;font-size:1.25rem}
 .blockquote-footer{display:block;font-size:80%;color:#6c757d}
 .blockquote-footer::before{content:"\2014\00A0"}
-.img-fluid{max-width:100%;height:auto}
+.img-fluid{max-width:100%;height:auto;opacity: 0.7;    margin-top:60;}
 .img-thumbnail{padding:.25rem;background-color:#fff;border:1px solid #dee2e6;border-radius:.25rem;max-width:100%;height:auto}
 .figure{display:inline-block}.figure-img{margin-bottom:.5rem;line-height:1}
 .figure-caption{font-size:90%;color:#6c757d}
@@ -882,5 +881,6 @@ a.text-dark:hover {
     .table-dark tbody+tbody,.table-dark td,.table-dark th,.table-dark thead th{border-color:#dee2e6}
     .table .thead-dark th{color:inherit;border-color:#dee2e6}}
 /*# sourceMappingURL=bootstrap.min.css.map */
+
 
 
