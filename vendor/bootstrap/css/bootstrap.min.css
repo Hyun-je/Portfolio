@@ -75,14 +75,22 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
     display: inline-block;
-    background-color:#222222;
-    color:#ffffff;
+    background-color:#111122;
+    color:#f7e8c1;
+}
+
+h3,h4 {
+    margin-top:20;
+    margin-bottom: 20;
+    display: inline-block;
+    background-color:#111122;
+    color:#f7e8c1;
 }
 
 p {
     white-space: pre-line;
-    margin-top:0;
-    margin-bottom:1rem
+    margin-top:5;
+    margin-bottom:2rem
 }
 
 abbr[data-original-title],abbr[title] {
@@ -822,4 +830,5 @@ a.text-dark:hover {
     .table-dark tbody+tbody,.table-dark td,.table-dark th,.table-dark thead th{border-color:#dee2e6}
     .table .thead-dark th{color:inherit;border-color:#dee2e6}}
 /*# sourceMappingURL=bootstrap.min.css.map */
+
 
