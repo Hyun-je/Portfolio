@@ -87,6 +87,10 @@ h3,h4 {
     color:#f7e8c1;
 }
 
+tag {
+    color:#666666;
+}
+
 p {
     white-space: pre-line;
     margin-top:5;
