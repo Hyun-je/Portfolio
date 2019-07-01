@@ -198,23 +198,9 @@
         
         <!-- Custom JavaScript for this theme -->
         <script src="js/scrolling-nav.js"></script>
-        <script src="js/WOW.js"></script>
+        <script src="js/wow.min.js"></script>
         <script>
-            wow = new WOW(
-                {
-                  animateClass: 'animated',
-                  offset:       100,
-                  callback:     function(box) {
-                          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                  }
-                }
-            );
-          wow.init();
-          document.getElementById('moar').onclick = function() {
-              var section = document.createElement('section');
-              section.className = 'section--purple wow fadeInDown';
-              this.parentNode.insertBefore(section, this);
-          };
+            new WOW().init();
         </script>
         
     </body>
