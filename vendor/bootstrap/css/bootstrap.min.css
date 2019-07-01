@@ -96,6 +96,11 @@ p {
     margin-bottom:1rem
 }
 
+.hideme
+{
+    opacity:0;
+}
+
 abbr[data-original-title],abbr[title] {
     text-decoration:underline;
     -webkit-text-decoration:underline dotted;
@@ -319,10 +324,11 @@ template{display:none}[hidden]{display:none!important}
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     margin-bottom:.5rem;
     font-weight:500;
-    line-height:1.2
+    line-height:1.2;
+    word-break: keep-all;
 }
 
-.h1,h1{font-size:2.2rem}
+.h1,h1{font-size:3.0em}
 .h2,h2{font-size:1.9rem}
 .h3,h3{font-size:1.7rem}
 .h4,h4{font-size:1.5rem}
@@ -333,6 +339,7 @@ template{display:none}[hidden]{display:none!important}
     font-size:1.1rem;
     font-weight:300;
     white-space: pre-line;
+    word-break: keep-all;
 }
 
 .display-1{font-size:6rem;font-weight:300;line-height:1.2}
@@ -363,6 +370,8 @@ kbd{padding:.2rem .4rem;font-size:87.5%;color:#fff;background-color:#212529;bord
 kbd kbd{padding:0;font-size:100%;font-weight:700}pre{display:block;font-size:87.5%;color:#212529}
 pre code{font-size:inherit;color:inherit;word-break:normal}
 .pre-scrollable{max-height:340px;overflow-y:scroll}
+
+
 .container {
     width:100%;
     padding-right:15px;
@@ -881,6 +890,7 @@ a.text-dark:hover {
     .table-dark tbody+tbody,.table-dark td,.table-dark th,.table-dark thead th{border-color:#dee2e6}
     .table .thead-dark th{color:inherit;border-color:#dee2e6}}
 /*# sourceMappingURL=bootstrap.min.css.map */
+
 
 
 
