@@ -1,402 +1,451 @@
-<html lang="en">
-    
-    <head>
-    
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <meta name="description" content="">
-        <meta name="author" content="">
-            
-        <title>Portfolio | Jaehyeon Park</title>
-        
-        <!-- Bootstrap core CSS -->
-        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<!doctype html>
+<html lang="ko">
 
-        <!-- Custom styles for this template -->
-        <link href="css/scrolling-nav.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-                            
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="소프트웨어 개발자 · 미디어아트 엔지니어 박재현의 포트폴리오">
+        <meta name="author" content="Jaehyeon Park">
+
+        <title>Portfolio | Jaehyeon Park</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
-    <body id="page-top">
-        
+    <body>
+
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <nav class="nav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">박재현 Portfolio</a>
-                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#software">Application</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#hardware">MediaArt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#bio">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="brand" href="#">박재현 <span>Jaehyeon Park</span></a>
+                <ul>
+                    <li><a href="#application">Application</a></li>
+                    <li><a href="#media-art">Media Art</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </div>
         </nav>
-        
-        <header class="bg-light text-black">
-            <div class="container text-left">
-                <h1 class="wow fadeInLeft"> 소프트웨어 개발자 | <br>미디어아트 엔지니어 </h1>
-                <p class="lead wow fadeInRight" data-wow-delay="0.2s">
-                반갑습니다. 저는 컴퓨터와 소프트웨어를 연구하고 개발하고 있는 박재현입니다.
-                임베디드 디바이스, 모바일 어플리케이션 개발을 통해 사용자 경험을 구현 하는 작업을 주로 하며
-                미디어 아티스트와 협업하며 테크놀러지를 새롭게 바라보는 접근을 좋아합니다.
-                저의 작업과 비전에 관심 가져 주셔서 감사합니다.</p>
-                <p class="tag">#c #c++ #swift #python #ios #embedded #ui #ux #design</p>
-            </div>
-        </header>
-        
-        <section id="software">
-            <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>// Application SW</h2>
 
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Landing Report&nbsp;&nbsp;&nbsp;&nbsp;2025.</h4>
-                                <br>
-                                항공기 착륙 리포트를 스캔하여 3D 리플레이를 만들어주는 조종사용 앱
-                                <p class="lead">
-                                __ OpenAI Vision API를 이용한 착륙 리포트 OCR 프롬프트 설계
-                                __ 항공기 센서 값(RALT, PITCH, ROLL, GSP 등) 보간을 통한 자세 추정 알고리즘
-                                __ SceneKit 기반 3D 착륙 리플레이 화면 구현
-                                __ StoreKit 2 구독 인앱 결제 시스템 및 CloudKit 동기화 적용
-                                </p>
-                                <p class="tag">#swift #ios #swiftui #openai #ocr #scenekit #storekit</p>
-                                <img class="img-fluid" src="image/works_landing_report.jpg">
-                                <br><br><br>
-                            </div>
-                        </div>
+        <main>
 
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>CodeTree&nbsp;&nbsp;&nbsp;&nbsp;2022.</h4>
-                                <br>
-                                심플하고 유려한 소스 코드 뷰어 앱
-                                <p class="lead">
-                                __ WebView 및 JavaScript를 이용한 코드 테마 기능 적용
-                                __ GitHub 로그인 및 Private 저장소 접근 기능
-                                __ Xcode 프로젝트 지원
-                                __ SwiftUI 기반 아이폰 / 아이패드 유니버셜 앱
-                                </p>
-                                <p class="tag">#swift #ios #swiftui #webview #javascript</p>
-                                <a href="https://apps.apple.com/us/app/code-viewer-simple-elegant/id1608692600">
-                                    <img class="img-fluid" src="image/works_code_tree.jpg">
-                                </a>
-                                <br><br><br>
-                            </div>
-                        </div>
+            <!-- Hero -->
+            <header class="hero">
+                <div class="container">
+                    <h1>소프트웨어 개발자,<br>미디어아트 엔지니어.</h1>
+                    <p class="lead">
+                        반갑습니다. 컴퓨터와 소프트웨어를 연구하고 개발하는 박재현입니다.
+                        임베디드 디바이스와 모바일 애플리케이션으로 사용자 경험을 구현하는 작업을 주로 하며,
+                        미디어 아티스트와 협업하며 테크놀로지를 새롭게 바라보는 접근을 좋아합니다.
+                    </p>
+                </div>
+            </header>
 
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Auto Blur&nbsp;&nbsp;&nbsp;&nbsp;2020.</h4>
-                                <br>
-                                이미지 & 동영상 프라이버시 보호를 위한 머신러닝 자동 블러 앱
-                                <p class="lead">
-                                __ CorlML을 이용한 오브젝트 인식 모델 제작
-                                __ Metal을 이용한 이미지 및 비디오 블러 효과 성능 향상
-                                __ iOS PhotoEditing Extension 적용
-                                __ 아이폰 및 아이패드 유니버셜 앱 디자인
-                                </p>
-                                <p class="tag">#swift #ios #vision #machinelearing #metal</p>
-                                <a href="https://apps.apple.com/us/app/auto-blur/id1547199734">
-                                    <img class="img-fluid" src="image/works_auto_blur.jpg">
-                                </a>
-                                <br><br><br>
-                            </div>
-                        </div>
+            <!-- Works: Application -->
+            <section id="application" class="works">
+                <div class="container">
+                    <div class="section-head">
+                        <h2 class="section-title">Application</h2>
+                        <span class="section-count">7 works</span>
+                    </div>
 
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Cat X Dog&nbsp;&nbsp;&nbsp;&nbsp;2019.</h4>
-                                <br>
-                                머신러닝 알고리즘 강아지상 고양이상 분류 앱
-                                <p class="lead">
-                                __ OpenFace와 scikit-learn을 이용한 얼굴상 분류 모델 제작
-                                __ Vision Framework을 이용한 Face Alignment 구현
-                                __ iOS 및 Android(예정) 플랫폼 모두 개발
-                                __ 구글 애드몹 배너 및 전면 광고 적용
-                                </p>
-                                <p class="tag">#swift #ios #vision #machinelearing #python</p>
-                                <a href="https://apps.apple.com/kr/app/강아지-x-고양이/id1475244524">
-                                    <img class="img-fluid" src="image/works_cat_and_dog.jpg">
-                                </a>
-                                <br><br><br>
+                    <div class="grid">
+
+                        <!-- ===== Landing Report ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_landing_report.jpg" alt="Landing Report 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2025</span></div>
+                                    <h3>Landing Report</h3>
+                                    <p>항공기 착륙 리포트를 스캔하여 3D 리플레이를 만들어주는 조종사용 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>swiftui</li><li>openai</li><li>ocr</li><li>scenekit</li><li>storekit</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>OpenAI Vision API를 이용한 착륙 리포트 OCR 프롬프트 설계</li>
+                                    <li>항공기 센서 값(RALT, PITCH, ROLL, GSP 등) 보간을 통한 자세 추정 알고리즘</li>
+                                    <li>SceneKit 기반 3D 착륙 리플레이 화면 구현</li>
+                                    <li>StoreKit 2 구독 인앱 결제 시스템 및 CloudKit 동기화 적용</li>
+                                </ul>
                             </div>
-                        </div>
-                        
-                        <hr>
-                        
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Flip Camera&nbsp;&nbsp;&nbsp;&nbsp;2018.</h4>
-                                <br>
-                                Selfie Camera 모션 인식 고화질 후면 셀카 앱
-                                <p class="lead">
-                                __ CoreMotion을 이용한 모션 촬영 기능 구현
-                                __ AVFoundation을 이용한 고화질 고속연사 기능 구현
-                                __ 간단한 사진 편집 및 EXIF 정보 출력 기능
-                                </p>
-                                <p class="tag">#swift #ios #coremotion #avfoundation #haptic #ui</p>
-                                <a href="https://apps.apple.com/us/app/flip-selfie-camera/id1443771496?l=ko&ls=1">
-                                    <img class="img-fluid" src="image/works_flip.jpg">
-                                </a>
-                                <br><br><br>
+                        </article>
+
+                        <!-- ===== CodeTree ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_code_tree.jpg" alt="CodeTree 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2022</span></div>
+                                    <h3>CodeTree</h3>
+                                    <p>심플하고 유려한 소스 코드 뷰어 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>swiftui</li><li>webview</li><li>javascript</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>WebView 및 JavaScript를 이용한 코드 테마 기능 적용</li>
+                                    <li>GitHub 로그인 및 Private 저장소 접근 기능</li>
+                                    <li>Xcode 프로젝트 지원</li>
+                                    <li>SwiftUI 기반 아이폰 / 아이패드 유니버설 앱</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/us/app/code-viewer-simple-elegant/id1608692600" target="_blank" rel="noopener">App Store ↗</a>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <hr>
-                        
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Golf Plus&nbsp;&nbsp;&nbsp;&nbsp;2017.</h4>
-                                <br>
-                                Swing Analyzer 골프 스윙 분석 및 시각화 앱
-                                <p class="lead">
-                                __ CoreMotion과 SceneKit을 이용한 스윙 궤적 3D 시각화
-                                __ CoreLocation, MapKit을 통한 샷 위치 및 거리 기록 기능 제공
-                                __ 골프 클럽 별 샷 목록 관리 기능 제공
-                                __ <a href="https://9to5mac.com/guides/golf-plus/">9to5Mac에서 Apple Watch의 피트니스 기능을 극대화 해주는 앱으로 평가 ↵</a>
-                                </p>
-                                <p class="tag">#swift #ios #watchos #coremotion #scenekit #ui</p>
-                                <a href="https://itunes.apple.com/us/app/golf-plus-swing-analyzer/id1227289107?l=ko&ls=1&mt=8">
-                                    <img class="img-fluid" src="image/works_golf_plus.jpg">
-                                </a>
-                                <br><br><br>
+                        </article>
+
+                        <!-- ===== Auto Blur ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_auto_blur.jpg" alt="Auto Blur 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2020</span></div>
+                                    <h3>Auto Blur</h3>
+                                    <p>이미지·동영상 프라이버시 보호를 위한 머신러닝 자동 블러 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>vision</li><li>coreml</li><li>metal</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>CoreML을 이용한 오브젝트 인식 모델 제작</li>
+                                    <li>Metal을 이용한 이미지 및 비디오 블러 효과 성능 향상</li>
+                                    <li>iOS PhotoEditing Extension 적용</li>
+                                    <li>아이폰 및 아이패드 유니버설 앱 디자인</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/us/app/auto-blur/id1547199734" target="_blank" rel="noopener">App Store ↗</a>
+                                </div>
                             </div>
-                        </div>
-                        
-                        <hr>
-                        
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Tennis Plus&nbsp;&nbsp;&nbsp;&nbsp;2016.</h4>
-                                <br>
-                                Tennis Tracker 테니스 스윙 트래킹 및 분류 앱
-                                <p class="lead">
-                                __ CoreML 머신러닝을 이용한 테니스 스윙 동작 분류
-                                __ 촬영된 동영상과 인식된 스윙을 싱크하는 기능 제공
-                                __ 스윙 통계, iCloud 백업 등 다양한 기능 제공
-                                __ <a href="https://urbanwearables.technology/top-tennis-apps-for-the-apple-watch/">Urban Wearables 에서 가장 진보한 Apple Watch용 테니스 앱으로 리뷰 ↵</a>
-                                </p>
-                                <p class="tag">#swift #ios #watchos #coremotion #machinelearing #ui</p>
-                                <a href="https://itunes.apple.com/us/app/tennis-plus/id1158767577?l=ko&ls=1&mt=8">
-                                    <img class="img-fluid" src="image/works_tennis_plus.jpg">
-                                </a>
-                                <br><br><br>
+                        </article>
+
+                        <!-- ===== Cat X Dog ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_cat_and_dog.jpg" alt="Cat X Dog 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2019</span></div>
+                                    <h3>Cat X Dog</h3>
+                                    <p>머신러닝으로 강아지상·고양이상을 분류하는 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>vision</li><li>machinelearning</li><li>python</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>OpenFace와 scikit-learn을 이용한 얼굴상 분류 모델 제작</li>
+                                    <li>Vision Framework를 이용한 Face Alignment 구현</li>
+                                    <li>iOS 및 Android(예정) 플랫폼 모두 개발</li>
+                                    <li>구글 애드몹 배너 및 전면 광고 적용</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/kr/app/강아지-x-고양이/id1475244524" target="_blank" rel="noopener">App Store ↗</a>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+
+                        <!-- ===== Flip Camera ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_flip.jpg" alt="Flip Camera 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2018</span></div>
+                                    <h3>Flip Camera</h3>
+                                    <p>모션 인식으로 촬영하는 고화질 후면 셀카 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>coremotion</li><li>avfoundation</li><li>haptic</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>CoreMotion을 이용한 모션 촬영 기능 구현</li>
+                                    <li>AVFoundation을 이용한 고화질 고속연사 기능 구현</li>
+                                    <li>간단한 사진 편집 및 EXIF 정보 출력 기능</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/us/app/flip-selfie-camera/id1443771496" target="_blank" rel="noopener">App Store ↗</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== Golf Plus ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_golf_plus.jpg" alt="Golf Plus 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2017</span></div>
+                                    <h3>Golf Plus</h3>
+                                    <p>Apple Watch 기반 골프 스윙 분석 및 3D 시각화 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>watchos</li><li>coremotion</li><li>scenekit</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>CoreMotion과 SceneKit을 이용한 스윙 궤적 3D 시각화</li>
+                                    <li>CoreLocation, MapKit을 통한 샷 위치 및 거리 기록 기능 제공</li>
+                                    <li>골프 클럽별 샷 목록 관리 기능 제공</li>
+                                    <li>9to5Mac에서 Apple Watch의 피트니스 기능을 극대화해주는 앱으로 평가</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/us/app/golf-plus-swing-analyzer/id1227289107" target="_blank" rel="noopener">App Store ↗</a>
+                                    <a class="btn" href="https://9to5mac.com/guides/golf-plus/" target="_blank" rel="noopener">9to5Mac 리뷰 ↗</a>
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- ===== Tennis Plus ===== -->
+                        <article class="work" data-cat="app">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_tennis_plus.jpg" alt="Tennis Plus 앱 화면"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Application</span><span class="year">2016</span></div>
+                                    <h3>Tennis Plus</h3>
+                                    <p>머신러닝으로 테니스 스윙을 트래킹하고 분류하는 Apple Watch 앱.</p>
+                                    <ul class="tags"><li>swift</li><li>watchos</li><li>coremotion</li><li>machinelearning</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <ul class="points">
+                                    <li>CoreML 머신러닝을 이용한 테니스 스윙 동작 분류</li>
+                                    <li>촬영된 동영상과 인식된 스윙을 싱크하는 기능 제공</li>
+                                    <li>스윙 통계, iCloud 백업 등 다양한 기능 제공</li>
+                                    <li>Urban Wearables에서 가장 진보한 Apple Watch용 테니스 앱으로 리뷰</li>
+                                </ul>
+                                <div class="modal-links">
+                                    <a class="btn" href="https://apps.apple.com/us/app/tennis-plus/id1158767577" target="_blank" rel="noopener">App Store ↗</a>
+                                    <a class="btn" href="https://urbanwearables.technology/top-tennis-apps-for-the-apple-watch/" target="_blank" rel="noopener">Urban Wearables 리뷰 ↗</a>
+                                </div>
+                            </div>
+                        </article>
 
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="hardware" class="bg-light">
-            <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>// Media Art Engineering</h2>
+            </section>
 
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Fine-tuning Human Sense 2.1&nbsp;&nbsp;&nbsp;&nbsp;2026.</h4>
-                                <p class="lead">
-                                곤충의 겹눈처럼 시야를 360도 가까이 확장한 디지털 비전 장치를 통해 공간을 인지하고,
-                                인공지능이 인식한 풍경을 인간보다 먼저 언어로 해석해 전달하는 몰입형 설치 및 퍼포먼스.
-                                기계가 지각을 미리 구조화하는 시대에 인간의 경험과 알고리즘의 해석이 협상되는 과정을 탐구하는
-                                미디어 아티스트 후니다 킴의 Ars Electronica 2026 수상 작.
+            <!-- Works: Media Art -->
+            <section id="media-art" class="works">
+                <div class="container">
+                    <div class="section-head">
+                        <h2 class="section-title">Media Art</h2>
+                        <span class="section-count">6 works</span>
+                    </div>
 
-                                Role__ 비전 인공지능 프로그래밍, 이미지 프로세싱, VLM을 이용한 비전 정보의 언어 변환, 객체 인식 및 통신 개발
+                    <div class="grid">
+
+                        <!-- ===== Fine-tuning Human Sense 2.1 ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_fine_Tuning_human_sense.jpg" alt="Fine-tuning Human Sense 2.1 설치 전경"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2026</span></div>
+                                    <h3>Fine-tuning Human Sense 2.1</h3>
+                                    <p>AI가 인식한 360° 풍경을 인간보다 먼저 언어로 해석해 전달하는 몰입형 설치 및 퍼포먼스. Ars Electronica 2026 수상작.</p>
+                                    <ul class="tags"><li>vision</li><li>vlm</li><li>objectdetection</li><li>imageprocessing</li><li>osc</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    곤충의 겹눈처럼 시야를 360도 가까이 확장한 디지털 비전 장치를 통해 공간을 인지하고,
+                                    인공지능이 인식한 풍경을 인간보다 먼저 언어로 해석해 전달하는 몰입형 설치 및 퍼포먼스.
+                                    기계가 지각을 미리 구조화하는 시대에 인간의 경험과 알고리즘의 해석이 협상되는 과정을 탐구하는
+                                    미디어 아티스트 후니다 킴의 Ars Electronica 2026 수상작.
                                 </p>
-                                <p class="tag">#vision #vlm #objectdetection #imageprocessing #osc</p>
-                                <img class="img-fluid" src="image/works_fine_Tuning_human_sense.jpg">
-                                <br><br><br>
+                                <p class="role"><strong>ROLE</strong>비전 인공지능 프로그래밍, 이미지 프로세싱, VLM을 이용한 비전 정보의 언어 변환, 객체 인식 및 통신 개발</p>
                             </div>
-                        </div>
+                        </article>
 
-                        <hr>
-
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Fine-tuning Human Senses&nbsp;&nbsp;&nbsp;&nbsp;2023.</h4>
-                                <p class="lead">
-                                환경 인지 장치 데이터스케이프를 장착한 퍼포머가 설치물에서 데이터를 읽어내고,
-                                관람객은 실시간으로 파인튜닝되는 데이터를 감각적으로 인식하는 퍼포먼스.
-                                미디어 아티스트 후니다 킴의 코리아나미술관 *c-lab 7.0 프로젝트 작품.
-
-                                Role__ 비전 인공지능 프로그래밍, iPad 앱 개발, 이미지 프로세싱, 얼굴 인식 및 통신 개발
+                        <!-- ===== Fine-tuning Human Senses ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_space_c.jpg" alt="Fine-tuning Human Senses 퍼포먼스"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2023</span></div>
+                                    <h3>Fine-tuning Human Senses</h3>
+                                    <p>퍼포머가 설치물에서 읽어낸 데이터를 관람객이 실시간으로 감각하는 퍼포먼스.</p>
+                                    <ul class="tags"><li>swift</li><li>ipados</li><li>vision</li><li>facetracking</li><li>osc</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    환경 인지 장치 데이터스케이프를 장착한 퍼포머가 설치물에서 데이터를 읽어내고,
+                                    관람객은 실시간으로 파인튜닝되는 데이터를 감각적으로 인식하는 퍼포먼스.
+                                    미디어 아티스트 후니다 킴의 코리아나미술관 *c-lab 7.0 프로젝트 작품.
                                 </p>
-                                <p class="tag">#swift #ipados #vision #facetracking #imageprocessing #osc</p>
-                                <img class="img-fluid" src="image/works_space_c.jpg">
-                                <br><br><br>
+                                <p class="role"><strong>ROLE</strong>비전 인공지능 프로그래밍, iPad 앱 개발, 이미지 프로세싱, 얼굴 인식 및 통신 개발</p>
                             </div>
-                        </div>
+                        </article>
 
-                        <hr>
+                        <!-- ===== DataScape ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_datascape.jpg" alt="DataScape 장치"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2021</span></div>
+                                    <h3>DataScape</h3>
+                                    <p>3D 라이다로 공간 정보를 청각·시각으로 변환해 인체에 결합하는 감각 확장 장치.</p>
+                                    <ul class="tags"><li>c++</li><li>ros</li><li>pointcloud</li><li>slam</li><li>openframeworks</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    3D 라이다를 이용하여 청각 및 시각 형태로 공간 정보를 변환하는 장치를 인체에 결합하여
+                                    인식과 감각의 확장을 경험. 미디어 아티스트 후니다 킴의 국립현대미술관 서울관 전시 작품.
+                                </p>
+                                <p class="role"><strong>ROLE</strong>ROS 환경 구축, PointCloud 프로세싱, 3D 시각화 소프트웨어 개발</p>
+                            </div>
+                        </article>
 
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>DataScape&nbsp;&nbsp;&nbsp;&nbsp;2021.</h4>
-                                <p class="lead">
-                                3D 라이다를 이용하여 청각 및 시각 형태로
-                                공간 정보를 변환하는 장치를 인체에 결합하여 인식과 감각의 확장을 경험.
-                                미디어 아티스트 후니다 킴의 국립현대미술관 서울관 전시 작품.
-                                
-                                Role__ ROS 환경 구축, PointCloud 프로세싱, 3D 시각화 소프트웨어 개발
+                        <!-- ===== DataScape Sense ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_datascape%20sense.jpg" alt="DataScape Sense 디바이스"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2019</span></div>
+                                    <h3>DataScape Sense</h3>
+                                    <p>주변 풍경을 라이다 센서로 인지하여 사운드를 연주하는 디바이스.</p>
+                                    <ul class="tags"><li>c++</li><li>python</li><li>linux</li><li>osc</li><li>supercollider</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    주변 풍경을 라이다 센서로 인지하여 사운드를 연주하는 디바이스.
+                                    인간의 감각을 확장하여 공간에 대한 새로운 인지를 경험하게 하기 위한
+                                    미디어 아티스트 후니다 킴의 ZER01NE Day 2019 작품.
                                 </p>
-                                <p class="tag">#c++ #ros #pointcloud #slam #openframeworks</p>
-                                <img class="img-fluid" src="image/works_datascape.jpg">
-                                <br><br><br>
+                                <p class="role"><strong>ROLE</strong>라이다 센서 드라이버 개발, OSC 통신 및 시각화 소프트웨어 개발</p>
                             </div>
-                        </div>
+                        </article>
 
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>DataScape Sense&nbsp;&nbsp;&nbsp;&nbsp;2019.</h4>
-                                <p class="lead">
-                                주변 풍경을 라이다 센서로 인지하여 사운드를 연주하는 디바이스.
-                                인간의 감각을 확장하여 공간에 대한 새로운 인지를 경험하게 하기 위한
-                                미디어 아티스트 후니다 킴의 ZER01NE Day 2019 작품.
-                                
-                                Role__ 라이다 센서 드라이버 개발, OSC 통신 및 시각화 소프트웨어 개발
+                        <!-- ===== Soundscape Chair ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_soundscape_chair.jpg" alt="Soundscape Chair"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2018</span></div>
+                                    <h3>Soundscape Chair</h3>
+                                    <p>풍경의 오브젝트를 사운드로 변환하여 새롭게 감각하게 하는 이동 장치.</p>
+                                    <ul class="tags"><li>swift</li><li>coreml</li><li>machinelearning</li><li>puredata</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    풍경의 오브젝트를 사운드로 변환하여 새롭게 감각하게 하는 이동 장치.
+                                    자율주행자동차 시대에 드라이빙의 감각을 대체할 새로운 이동 경험을 제안하기 위한
+                                    미디어 아티스트 후니다 킴, 조호영 작가의 ZER01NE Day 2018 작품.
                                 </p>
-                                <p class="tag">#c++ #python #linux #osc #supercollider</p>
-                                <img class="img-fluid" src="image/works_datascape sense.jpg">
-                                <br><br><br>
+                                <p class="role"><strong>ROLE</strong>Object Detection 및 사운드 출력 iOS 앱 개발</p>
                             </div>
-                        </div>
-                        
-                        <hr>
-                        
-                        <div class="wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Soundscape Chair&nbsp;&nbsp;&nbsp;&nbsp;2018.</h4>
-                                <p class="lead">
-                                풍경의 오브젝트를 사운드로 변환하여 새롭게 감각하게 하는 이동 장치.
-                                자율주행자동차 시대에 드라이빙의 감각을 대체할 새로운 이동 경험을 제안 하기 위한
-                                미디어 아티스트 후니다 킴, 조호영 작가의 ZER01NE Day 2018 작품.
-                                
-                                Role__ Object Detection 및 사운드 출력 iOS 앱 개발
-                                </p>
-                                <p class="tag">#swift #ios #coreml #machinelearing #puredata</p>
-                                <img class="img-fluid" src="image/works_soundscape_chair.jpg">
-                                <br><br><br>
-                            </div>
-                        </div>
+                        </article>
 
-                        <hr>
-                        
-                        <div class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
-                            <div class="detail">
-                                <br>
-                                <h4>Sound Jewelry&nbsp;&nbsp;&nbsp;&nbsp;2017.</h4>
-                                <p class="lead">
-                                신체의 움직임을 소리로 표현하기 위한 디바이스의 회로와 임베디드 소프트웨어 개발 및
-                                디바이스에 연동되어 사운드를 생성하는 iOS 어플리케이션 개발.
-                                미디어 아티스트 후니다 킴의 2017년 청주공예비엔날레 출품 작.
-                                
-                                Role__ PCB 회로 설계 및 디바이스 펌웨어 개발, BLE 연동 iOS 앱 개발
+                        <!-- ===== Sound Jewelry ===== -->
+                        <article class="work" data-cat="media">
+                            <button type="button" class="work-card" aria-haspopup="dialog">
+                                <div class="thumb"><img loading="lazy" src="image/works_sound_jewelry.jpg" alt="Sound Jewelry 디바이스"></div>
+                                <div class="work-body">
+                                    <div class="work-meta"><span class="badge">Media Art</span><span class="year">2017</span></div>
+                                    <h3>Sound Jewelry</h3>
+                                    <p>신체의 움직임을 소리로 표현하는 웨어러블 디바이스와 iOS 사운드 앱.</p>
+                                    <ul class="tags"><li>c</li><li>embedded</li><li>circuit</li><li>ble</li></ul>
+                                </div>
+                            </button>
+                            <div class="work-detail">
+                                <p class="desc">
+                                    신체의 움직임을 소리로 표현하기 위한 디바이스의 회로와 임베디드 소프트웨어 개발 및
+                                    디바이스에 연동되어 사운드를 생성하는 iOS 애플리케이션 개발.
+                                    미디어 아티스트 후니다 킴의 2017 청주공예비엔날레 출품작.
                                 </p>
-                                <p class="tag">#c #embedded #circuit #electronics</p>
-                                <img class="img-fluid" src="image/works_sound_jewelry.jpg">
-                                <br><br><br>
+                                <p class="role"><strong>ROLE</strong>PCB 회로 설계 및 디바이스 펌웨어 개발, BLE 연동 iOS 앱 개발</p>
                             </div>
-                        </div>
-                        
-                        
+                        </article>
 
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="bio">
-            <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>// About Me</h2>
-                        <p></p>
-                        
-                        <p class="lead wow fadeInDown">
-                        저는 인디 개발자로서 iOS 모바일 어플리케이션 디자인과 개발을 하고 있습니다.
+            </section>
 
-                        대학에서는 기계공학 전공을 선택하여 전통적인 물리와 역학 지식 베이스를 가지고 있기 때문에
-                        현실 공간에서 기계와 인간의 인터랙티브적인 소프트웨어를 디자인하는 것을 즐겨하며
-                        이것은 저에게 있어 가장 중요한 개발 철학으로 자리잡고 있습니다.
-
-                        최근에는 Motion, Vision, Machine Learning등 최신의 기술과 Framework을 이용하면서도
-                        사용자 교감 경험을 전달할 수 있는 UI/UX를 제안하는 것을 목표로 매년 새로운 앱을 런칭하고 있습니다.
-                        </p><br>
-
+            <!-- About -->
+            <section id="about">
+                <div class="container">
+                    <div class="section-head">
+                        <h2 class="section-title">About</h2>
+                    </div>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>
+                                저는 iOS 애플리케이션을 디자인하고 개발하는 인디 개발자이자,
+                                미디어 아티스트와 함께 비전 인공지능과 센서 기반의 작업을 만드는 엔지니어입니다.
+                            </p>
+                            <p>
+                                대학에서 기계공학을 전공하여 전통적인 물리와 역학 지식 베이스를 가지고 있기 때문에
+                                현실 공간에서 기계와 인간이 상호작용하는 소프트웨어를 디자인하는 것을 즐기며,
+                                이것은 저에게 가장 중요한 개발 철학으로 자리 잡고 있습니다.
+                            </p>
+                            <p>
+                                최근에는 Vision, Machine Learning, VLM 등 AI 기술을 직접 다루면서
+                                그 기술이 어디로 향하고 사회에 어떤 파장을 남기는지에도 관심을 두고 있습니다.
+                                <a href="https://brunch.co.kr/@tortoise" target="_blank" rel="noopener">브런치</a>에서는
+                                IT와 AI 트렌드를 분석하며 기술의 방향성과 인간의 역할을 함께 고민하는 글을 쓰고 있습니다.
+                            </p>
+                        </div>
+                        <div class="skills">
+                            <div>
+                                <h3>LANGUAGES</h3>
+                                <ul class="tags"><li>swift</li><li>c</li><li>c++</li><li>python</li><li>javascript</li></ul>
+                            </div>
+                            <div>
+                                <h3>PLATFORMS</h3>
+                                <ul class="tags"><li>ios</li><li>ipados</li><li>watchos</li><li>embedded</li><li>linux</li><li>ros</li></ul>
+                            </div>
+                            <div>
+                                <h3>FOCUS</h3>
+                                <ul class="tags"><li>vision</li><li>machinelearning</li><li>vlm</li><li>coremotion</li><li>3d</li><li>ui</li><li>ux</li></ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        
-        <section id="contact" class="bg-light">
-            <div class="container wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.2s">
-                <div class="row">
-                    <div class="col-lg-8 mx-auto">
-                        <h2>// Contact</h2>
-                        <p></p>
-                        
-                        <p class="lead">저와 함께 일하고 생각을 나누고 싶으신 분들의 연락을 기다립니다.</p>
-                        <p class="lead">e-mail : <a href="mailto:bigae2@gmail.com">bigae2@gmail.com</a>
-                        github : <a href="https://github.com/Hyun-je">https://github.com/Hyun-je</a></p>
+            </section>
+
+            <!-- Contact -->
+            <section id="contact">
+                <div class="container">
+                    <div class="section-head">
+                        <h2 class="section-title">Contact</h2>
                     </div>
+                    <p class="contact-lead">저와 함께 일하고 생각을 나누고 싶으신 분들의 연락을 기다립니다.</p>
+                    <dl class="contact-list">
+                        <div><dt>E-mail</dt><dd><a href="mailto:bigae2@gmail.com">bigae2@gmail.com</a></dd></div>
+                        <div><dt>GitHub</dt><dd><a href="https://github.com/Hyun-je" target="_blank" rel="noopener">github.com/Hyun-je</a></dd></div>
+                        <div><dt>Brunch</dt><dd><a href="https://brunch.co.kr/@tortoise" target="_blank" rel="noopener">brunch.co.kr/@tortoise</a></dd></div>
+                    </dl>
                 </div>
-            </div>
-        </section>
-        
-        <!-- Footer -->
-        <footer class="py-5 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright © Jaehyeon Park 2019</p>
-            </div>
-            <!-- /.container -->
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="container">© 2026 Jaehyeon Park</div>
         </footer>
-        
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        
-        <!-- Plugin JavaScript -->
-        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-        
-        <!-- Custom JavaScript for this theme -->
-        <script src="js/scrolling-nav.js"></script>
-        <script src="js/wow.min.js"></script>
-        <script>
-            new WOW().init();
-        </script>
-        
-    </body>
-    
-</html>
 
+        <!-- Work detail modal -->
+        <dialog id="work-modal" class="modal" aria-labelledby="work-modal-title">
+            <button type="button" class="modal-close">닫기 ✕</button>
+            <div class="modal-scroll">
+                <div class="modal-image"><img src="" alt=""></div>
+                <div class="modal-body">
+                    <div class="modal-head">
+                        <div class="work-meta"><span class="badge"></span><span class="modal-year"></span></div>
+                        <h2 id="work-modal-title"></h2>
+                        <p class="modal-summary"></p>
+                        <ul class="tags"></ul>
+                    </div>
+                    <div class="modal-detail"></div>
+                </div>
+            </div>
+        </dialog>
+
+        <script src="js/main.js"></script>
+
+    </body>
+
+</html>
